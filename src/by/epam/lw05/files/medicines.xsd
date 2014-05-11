@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified" 
+           targetNamespace="http://www.files.lw05.epam.by/Medicines"
+           xmlns:mdc="http://www.files.lw05.epam.by/Medicines">
+    <xs:element name="medicines">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="medicine" type="mdc:Medicine" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="Medicine">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="company" type="xs:string"/>
+            <xs:element name="group" type="xs:string"/>
+            <xs:element name="consistence" type="mdc:Consistense"/>
+            <xs:element name="analogs" type="mdc:Analogs"/>
+            <xs:element name="dosage" type="mdc:Dosage"/>
+            <xs:element name="package" type="mdc:Package"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="Consistense">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="pill"></xs:enumeration>
+            <xs:enumeration value="capsule"></xs:enumeration>
+            <xs:enumeration value="drops"></xs:enumeration>
+            <xs:enumeration value="ointment"></xs:enumeration>
+            <xs:enumeration value="syrup"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="Analogs">
+            <xs:sequence>
+                <xs:element name="analog" type="mdc:Medicine" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Dosage">
+        <xs:sequence>
+            <xs:element name="frequency" type="mdc:Frequency"/>
+            <xs:element name="number" type="xs:integer"/>
+            <xs:element name="isAfterFood" type="xs:boolean"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="Frequency">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="perDay"></xs:enumeration>
+            <xs:enumeration value="perWeek"></xs:enumeration>
+            <xs:enumeration value="perMonth"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="Package">
+        <xs:sequence>
+            <xs:element name="type" type="xs:string"/>
+            <xs:element name="number" type="xs:integer"/>
+            <xs:element name="price" type="xs:float"/>          
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+</xs:schema>

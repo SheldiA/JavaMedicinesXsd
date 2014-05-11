@@ -1,0 +1,1884 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html itemscope itemtype="http://schema.org/Organization"  xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+
+
+
+
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="keywords" content=""/>
+    <meta http-equiv="description" content=""/>
+    <meta http-equiv="title" content="&#1054;&#1096;&#1080;&#1073;&#1082;&#1072; 404"/>
+    
+    
+
+
+
+
+
+
+
+<script type="text/javascript" src="/etc/clientlibs/granite/jquery.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/granite/utils.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/foundation/jquery.min.js"></script>
+
+            <script>
+                function googleTrackStart(formName){}	
+                function googleTrackEnd(formName){}
+            </script>
+		
+            <script>
+                function googleTrackStart(formName){}	
+                function googleTrackEnd(formName){}
+            </script>
+		
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-155540-8']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_setAllowAnchor', true]);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+   
+    function googleTrackStart(formName){	
+		_gaq.push(["_setCustomVar", 1, formName, "start", 3]); 
+		_gaq.push(['_trackPageview']);
+	
+	}
+	
+	function googleTrackEnd(formName){
+		_gaq.push(["_setCustomVar", 1, formName, "end", 3]); 
+		_gaq.push(['_trackPageview']);
+	}
+   
+    if (typeof jQuery != 'undefined') {
+      jQuery(document).ready(function($) {
+        var filetypes = /\.(zip|exe|dmg|pdf|doc.*|xls.*|ppt.*|mp3|txt|rar|wma|mov|avi|wmv|flv|wav)$/i
+        var baseHref = '';
+        if (jQuery('base').attr('href') != undefined) baseHref = jQuery('base').attr('href');
+    
+        jQuery('a').on('click', function(event) {
+          var el = jQuery(this);
+          var track = true;
+          var href = (typeof(el.attr('href')) != 'undefined' ) ? el.attr('href') :"";
+          var isThisDomain = href.match(document.domain.split('.').reverse()[1] + '.' + document.domain.split('.').reverse()[0]);
+          if (!href.match(/^javascript:/i)) {
+            var elEv = []; elEv.value=0, elEv.non_i=true;
+            if (href.match(/^mailto\:/i)) {
+              elEv.category = "email";
+              elEv.action = "click";
+              elEv.label = href.replace(/^mailto\:/i, '');
+              elEv.loc = href;
+            }
+            else if (href.match(filetypes)) {
+              var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+              elEv.category = "download";
+              elEv.action = "click-" + extension[0];
+              elEv.label = href.replace(/ /g,"-");
+              elEv.loc = baseHref + href;
+            }
+            else if (href.match(/^https?\:/i) && !isThisDomain) {
+              elEv.category = "external";
+              elEv.action = "click";
+              elEv.label = href.replace(/^https?\:\/\//i, '');
+              elEv.loc = href;
+            }
+            else if (href.match(/^tel\:/i)) {
+              elEv.category = "telephone";
+              elEv.action = "click";
+              elEv.label = href.replace(/^tel\:/i, '');
+              elEv.loc = href;
+            }
+            else track = false;
+    
+           if (track) {
+              _gaq.push(['_trackEvent', elEv.category.toLowerCase(), elEv.action.toLowerCase(), elEv.label.toLowerCase(), elEv.value, elEv.non_i]);
+              if ( el.attr('target') == undefined || el.attr('target').toLowerCase() != '_blank') {
+                setTimeout(function() { location.href = elEv.loc; }, 400);
+                return false;
+              }
+            }
+          }
+        });
+      });
+    }
+</script>
+
+
+    <meta name="google-site-verification" content="DII5rzmDAbSZPMnSvsv-4k1vuPBmGQ0u49Z6bncsWFU" />
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        window.___gcfg = {
+            lang: 'ru'
+        };
+
+        var addthis_config = {
+            data_ga_property: 'UA-155540-8'
+        };
+    </script>
+
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4ed5fdcc60205be1"></script>
+<script type="text/javascript" src="/etc/clientlibs/granite/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/foundation/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="/etc/designs/epam/ui.1399448247164.min.css" type="text/css"/>
+
+<script type="text/javascript" src="/etc/designs/epam/ui.1399448247164.min.js"></script>
+
+    <meta itemprop="name" content="&#1054;&#1096;&#1080;&#1073;&#1082;&#1072; 404">
+    <meta itemprop="description" content="">
+    <link rel="image_src" type="image/jpeg" href="/etc/designs/epam/images/logos/logo.jpg"/>
+	
+    
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/etc/designs/epam/ui/ico/favicon.ico"/>
+    <link rel="alternate" type="application/rss+xml" title="Новости EPAM" href="/content/epam/ru_by.feed"/>
+    
+    <title>Ошибка 404</title>
+    <script type="text/javascript">
+        if (window.CQ) {
+            CQ.Ext.ns("Epam");
+            Epam.siteCode = "ru_by";
+        }
+    </script>
+<!--[if IE]>
+    <link type="text/css" rel="stylesheet" href="/etc/designs/epam/ui/css/ie/ie.css" />
+<![endif]-->
+<!--[if IE 7]>
+    <link type="text/css" rel="stylesheet"  href="/etc/designs/epam/ui/css/ie/ie7only.css" />
+    <script type="text/javascript" src="/etc/designs/epam/ui/js/ie/ie7.js"></script>
+<![endif]-->
+<!--[if IE 8]>
+    <link type="text/css" rel="stylesheet"  href="/etc/designs/epam/ui/css/ie/ie8only.css" />
+<![endif]-->
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="/etc/designs/epam/ui/js/libs/PIE.js"></script>
+    <script type="text/javascript" src="/etc/designs/epam/ui/js/ie/lt-ie9.js"></script>
+    <link type="text/css" rel="stylesheet" href="/etc/designs/epam/ui/css/ie/lt-ie9.css" />
+<![endif]-->
+<!--[if IE 9]>
+    <link type="text/css" rel="stylesheet" href="/etc/designs/epam/ui/css/ie/ie9only.css" />
+<![endif]-->
+<!--[if lt IE 10]>
+	<link type="text/css" rel="stylesheet" href="/etc/designs/epam/ui/css/ie/lt-ie10.css"/>
+<![endif]-->
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+<body class="page common articlepage ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter18208663 = new Ya.Metrika({id:18208663, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true});
+                } catch(e) { }
+            });
+               
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+             
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/18208663" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    
+
+<div class="container">
+    
+    
+
+
+
+
+
+
+
+<div class="header">
+    <div class="container_16">
+	    <div class="grid_4">
+	        <div class="logo">
+
+
+
+
+
+
+
+
+
+<a href="/ru_by.html">
+    
+		<!--[if lt IE 9]>
+			<img src="/etc/designs/epam/images/components/logo/logotype20.png" alt="Превосходство в программной инженерии" title="" />
+		<![endif]-->
+    
+        
+			<!--[if gt IE 8]>
+				<img src="/etc/designs/epam/images/components/logo/logo20.svg" alt="Превосходство в программной инженерии" title="" />
+			<![endif]-->
+			<!--[if !IE]>-->
+				<img src="/etc/designs/epam/images/components/logo/logo20.svg" alt="Превосходство в программной инженерии" title=""/>
+ 			<!--<![endif]-->
+    
+    
+</a></div>
+
+	    </div>
+	    <div class="grid_8">
+	        <div id="topnav" class="preload topNavigation">
+
+
+
+
+
+
+
+
+
+
+<ul><li><a href="/services.html">&#1059;&#1089;&#1083;&#1091;&#1075;&#1080;</a><ul><li><a href="/services/product-development.html">&#1056;&#1072;&#1079;&#1088;&#1072;&#1073;&#1086;&#1090;&#1082;&#1072; &#1087;&#1088;&#1086;&#1075;&#1088;&#1072;&#1084;&#1084;&#1085;&#1099;&#1093; &#1087;&#1088;&#1086;&#1076;&#1091;&#1082;&#1090;&#1086;&#1074;</a></li><li><a href="/services/application-development.html">&#1056;&#1072;&#1079;&#1088;&#1072;&#1073;&#1086;&#1090;&#1082;&#1072; &#1073;&#1080;&#1079;&#1085;&#1077;&#1089;-&#1087;&#1088;&#1080;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1081;</a></li><li><a href="/services/eai.html">&#1048;&#1085;&#1090;&#1077;&#1075;&#1088;&#1072;&#1094;&#1080;&#1103; &#1087;&#1088;&#1080;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1081;</a></li><li><a href="/services/porting.html">&#1052;&#1080;&#1075;&#1088;&#1072;&#1094;&#1080;&#1103; &#1087;&#1088;&#1080;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1081;</a></li><li><a href="/services/testing.html">&#1058;&#1077;&#1089;&#1090;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077; &#1080; QA</a></li><li><a href="/services/support.html">&#1057;&#1086;&#1087;&#1088;&#1086;&#1074;&#1086;&#1078;&#1076;&#1077;&#1085;&#1080;&#1077; &#1080; &#1087;&#1086;&#1076;&#1076;&#1077;&#1088;&#1078;&#1082;&#1072;</a></li><li><a href="/services/ddc.html">&#1057;&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1077; &#1074;&#1099;&#1076;&#1077;&#1083;&#1077;&#1085;&#1085;&#1099;&#1093; &#1094;&#1077;&#1085;&#1090;&#1088;&#1086;&#1074;</a></li></ul></li><li><a href="/verticals.html">&#1054;&#1090;&#1088;&#1072;&#1089;&#1083;&#1080;</a><ul><li><a href="/verticals/banking-finance.html">&#1041;&#1072;&#1085;&#1082;&#1080; &#1080; &#1092;&#1080;&#1085;&#1072;&#1085;&#1089;&#1099;</a></li><li><a href="/verticals/insurance.html">&#1057;&#1090;&#1088;&#1072;&#1093;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;</a></li><li><a href="/verticals/travel.html">&#1058;&#1091;&#1088;&#1080;&#1079;&#1084; &#1080; &#1090;&#1088;&#1072;&#1085;&#1089;&#1087;&#1086;&#1088;&#1090;</a></li><li><a href="/verticals/software-vendors.html">&#1055;&#1088;&#1086;&#1080;&#1079;&#1074;&#1086;&#1076;&#1080;&#1090;&#1077;&#1083;&#1080; &#1055;&#1054;</a></li><li><a href="/verticals/other-verticals.html">&#1044;&#1088;&#1091;&#1075;&#1080;&#1077; &#1086;&#1090;&#1088;&#1072;&#1089;&#1083;&#1080;</a></li></ul></li><li><a href="/solutions.html">&#1056;&#1077;&#1096;&#1077;&#1085;&#1080;&#1103;</a><ul><li><a href="/solutions/mobile-applications.html">&#1052;&#1086;&#1073;&#1080;&#1083;&#1100;&#1085;&#1099;&#1077; &#1087;&#1088;&#1080;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1103;</a></li><li><a href="/solutions/analytics.html">&#1054;&#1090;&#1095;&#1077;&#1090;&#1085;&#1086;&#1089;&#1090;&#1100; &#1080; &#1072;&#1085;&#1072;&#1083;&#1080;&#1090;&#1080;&#1082;&#1072;</a></li><li><a href="/solutions/e-commerce.html">&#1069;&#1083;&#1077;&#1082;&#1090;&#1088;&#1086;&#1085;&#1085;&#1072;&#1103; &#1082;&#1086;&#1084;&#1084;&#1077;&#1088;&#1094;&#1080;&#1103;</a></li><li><a href="/solutions/plm.html">PLM-&#1088;&#1077;&#1096;&#1077;&#1085;&#1080;&#1103;</a></li><li><a href="/solutions/portals.html">&#1055;&#1086;&#1088;&#1090;&#1072;&#1083;&#1099;</a></li><li><a href="/solutions/sap-technologies.html">SAP-&#1090;&#1077;&#1093;&#1085;&#1086;&#1083;&#1086;&#1075;&#1080;&#1080;</a></li></ul></li><li><a href="/aboutus.html">&#1050;&#1086;&#1084;&#1087;&#1072;&#1085;&#1080;&#1103;</a><ul><li><a href="/aboutus/history.html">&#1048;&#1089;&#1090;&#1086;&#1088;&#1080;&#1103;</a></li><li><a href="/aboutus/leadership.html">&#1056;&#1091;&#1082;&#1086;&#1074;&#1086;&#1076;&#1089;&#1090;&#1074;&#1086;</a></li><li><a href="/aboutus/awards.html">&#1053;&#1072;&#1075;&#1088;&#1072;&#1076;&#1099;</a></li><li><a href="/aboutus/news-and-events.html">&#1053;&#1086;&#1074;&#1086;&#1089;&#1090;&#1080; &#1080; &#1089;&#1086;&#1073;&#1099;&#1090;&#1080;&#1103;</a><ul><li><a href="/aboutus/news-and-events/news.html">&#1053;&#1086;&#1074;&#1086;&#1089;&#1090;&#1080;</a></li><li><a href="/aboutus/news-and-events/articles.html">C&#1090;&#1072;&#1090;&#1100;&#1080;</a></li><li><a href="/aboutus/news-and-events/events.html">&#1057;&#1086;&#1073;&#1099;&#1090;&#1080;&#1103;</a></li><li><a href="/aboutus/news-and-events/press-releases.html">&#1055;&#1088;&#1077;&#1089;&#1089;-&#1088;&#1077;&#1083;&#1080;&#1079;&#1099;</a></li></ul></li><li><a href="/aboutus/locations.html">&#1055;&#1088;&#1077;&#1076;&#1089;&#1090;&#1072;&#1074;&#1080;&#1090;&#1077;&#1083;&#1100;&#1089;&#1090;&#1074;&#1072;</a></li><li><a href="/aboutus/contact-us.html">&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;&#1099;</a></li></ul></li><li><a href="/strengths.html">&#1060;&#1086;&#1088;&#1084;&#1091;&#1083;&#1072; &#1091;&#1089;&#1087;&#1077;&#1093;&#1072;</a><ul><li><a href="/strengths/specialists.html">&#1057;&#1086;&#1090;&#1088;&#1091;&#1076;&#1085;&#1080;&#1082;&#1080;</a></li><li><a href="/strengths/customers.html">&#1047;&#1072;&#1082;&#1072;&#1079;&#1095;&#1080;&#1082;&#1080;</a></li><li><a href="/strengths/partners.html">&#1055;&#1072;&#1088;&#1090;&#1085;&#1077;&#1088;&#1099;</a></li><li><a href="/strengths/competency-centers.html">&#1062;&#1077;&#1085;&#1090;&#1088;&#1099; &#1082;&#1086;&#1084;&#1087;&#1077;&#1090;&#1077;&#1085;&#1094;&#1080;&#1080;</a><ul><li><a href="/strengths/competency-centers/investment-center.html">&#1056;&#1099;&#1085;&#1082;&#1080; &#1082;&#1072;&#1087;&#1080;&#1090;&#1072;&#1083;&#1072;</a></li><li><a href="/strengths/competency-centers/insurance-center.html">&#1057;&#1090;&#1088;&#1072;&#1093;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;</a></li><li><a href="/strengths/competency-centers/ecommerce-center.html">&#1069;&#1083;&#1077;&#1082;&#1090;&#1088;&#1086;&#1085;&#1085;&#1072;&#1103; &#1082;&#1086;&#1084;&#1084;&#1077;&#1088;&#1094;&#1080;&#1103;</a></li><li><a href="/strengths/competency-centers/testing-center.html">&#1058;&#1077;&#1089;&#1090;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;</a></li><li><a href="/strengths/competency-centers/mobile-solutions-center.html">&#1052;&#1086;&#1073;&#1080;&#1083;&#1100;&#1085;&#1099;&#1077; &#1088;&#1077;&#1096;&#1077;&#1085;&#1080;&#1103;</a></li><li><a href="/strengths/competency-centers/content-management-center.html">&#1059;&#1087;&#1088;&#1072;&#1074;&#1083;&#1077;&#1085;&#1080;&#1077; &#1082;&#1086;&#1085;&#1090;&#1077;&#1085;&#1090;&#1086;&#1084;</a></li><li><a href="/strengths/competency-centers/cloud-technologies-center.html">&#1054;&#1073;&#1083;&#1072;&#1095;&#1085;&#1099;&#1077; &#1090;&#1077;&#1093;&#1085;&#1086;&#1083;&#1086;&#1075;&#1080;&#1080;</a></li></ul></li><li><a href="/strengths/technologies.html">&#1058;&#1077;&#1093;&#1085;&#1086;&#1083;&#1086;&#1075;&#1080;&#1080;</a></li><li><a href="/strengths/methodology.html">&#1052;&#1077;&#1090;&#1086;&#1076;&#1086;&#1083;&#1086;&#1075;&#1080;&#1103;</a><ul><li><a href="/strengths/methodology/agile.html">Agile</a></li><li><a href="/strengths/methodology/rup.html">RUP</a></li><li><a href="/strengths/methodology/continuous-integration.html">&#1053;&#1077;&#1087;&#1088;&#1077;&#1088;&#1099;&#1074;&#1085;&#1072;&#1103; &#1080;&#1085;&#1090;&#1077;&#1075;&#1088;&#1072;&#1094;&#1080;&#1103;</a></li></ul></li></ul></li><li><a href="/career.html">&#1050;&#1072;&#1088;&#1100;&#1077;&#1088;&#1072;</a><ul><li><a href="/career/vacancies.html">&#1042;&#1072;&#1082;&#1072;&#1085;&#1089;&#1080;&#1080;</a></li><li><a href="/career/trainings.html">&#1058;&#1088;&#1077;&#1085;&#1080;&#1085;&#1075;&#1080;</a></li><li><a href="/career/professional-development.html">&#1056;&#1072;&#1079;&#1074;&#1080;&#1090;&#1080;&#1077; &#1082;&#1072;&#1088;&#1100;&#1077;&#1088;&#1099;</a><ul><li><a href="/career/professional-development/career-path.html">&#1050;&#1072;&#1088;&#1100;&#1077;&#1088;&#1085;&#1099;&#1081; &#1087;&#1091;&#1090;&#1100;</a></li><li><a href="/career/professional-development/career-development.html">&#1055;&#1088;&#1086;&#1075;&#1088;&#1072;&#1084;&#1084;&#1072; &#1082;&#1072;&#1088;&#1100;&#1077;&#1088;&#1085;&#1086;&#1075;&#1086; &#1088;&#1086;&#1089;&#1090;&#1072;</a></li></ul></li><li><a href="/career/benefits.html">&#1057;&#1086;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1081; &#1087;&#1072;&#1082;&#1077;&#1090;</a><ul><li><a href="/career/benefits/sport.html">&#1057;&#1087;&#1086;&#1088;&#1090;</a></li><li><a href="/career/benefits/medical-care.html">&#1052;&#1077;&#1076;&#1080;&#1094;&#1080;&#1085;&#1089;&#1082;&#1086;&#1077; &#1086;&#1073;&#1089;&#1083;&#1091;&#1078;&#1080;&#1074;&#1072;&#1085;&#1080;&#1077;</a></li><li><a href="/career/benefits/discounts.html">&#1057;&#1082;&#1080;&#1076;&#1082;&#1080; &#1080; &#1073;&#1086;&#1085;&#1091;&#1089;&#1099;</a></li><li><a href="/career/benefits/corporate-events.html">&#1050;&#1086;&#1088;&#1087;&#1086;&#1088;&#1072;&#1090;&#1080;&#1074;&#1085;&#1099;&#1077; &#1084;&#1077;&#1088;&#1086;&#1087;&#1088;&#1080;&#1103;&#1090;&#1080;&#1103;</a></li><li><a href="/career/benefits/courses.html">&#1050;&#1091;&#1088;&#1089;&#1099; &#1080; &#1086;&#1073;&#1091;&#1095;&#1077;&#1085;&#1080;&#1077;</a></li><li><a href="/career/benefits/children-care.html">&#1047;&#1072;&#1073;&#1086;&#1090;&#1072; &#1086; &#1076;&#1077;&#1090;&#1103;&#1093; &#1089;&#1086;&#1090;&#1088;&#1091;&#1076;&#1085;&#1080;&#1082;&#1086;&#1074;</a></li></ul></li><li><a href="/career/universities.html">&#1056;&#1072;&#1073;&#1086;&#1090;&#1072; &#1089; &#1091;&#1085;&#1080;&#1074;&#1077;&#1088;&#1089;&#1080;&#1090;&#1077;&#1090;&#1072;&#1084;&#1080;</a></li><li><a href="/career/faq.html">&#1050;&#1072;&#1082; &#1087;&#1086;&#1087;&#1072;&#1089;&#1090;&#1100; &#1074; EPAM?</a><ul><li><a href="/career/faq/for-students.html">&#1055;&#1091;&#1090;&#1100; &#1089;&#1090;&#1091;&#1076;&#1077;&#1085;&#1090;&#1072;</a></li><li><a href="/career/faq/for-specialists.html">&#1055;&#1091;&#1090;&#1100; &#1089;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1080;&#1089;&#1090;&#1072;</a></li></ul></li></ul></li></ul>
+<div class="clear"></div></div>
+
+	    </div>
+	    <div class="grid_4 grid_right">
+            <div class="globalSitesLinks">
+
+
+
+
+
+
+
+
+<ul class="siteLang">
+
+
+    
+    
+    
+    
+         
+        
+                
+                
+                                          
+    
+         
+                                          
+    
+         
+                                          
+    
+         
+                                          
+    
+         
+                                          
+    
+
+                    
+    <li class="global">Беларусь</li>
+    <li class="current coverHolder">
+        <a class="toggle" href="javascript:void(0);" onclick="javascript: return false;">Русский</a>
+        <div class="cover">
+            <div class="content">
+            	<span class="nowrap">
+	                <span class="t1 on">Глобальные веб-сайты</span>
+	                <span class="t2">Полезные ресурсы</span>
+	                &nbsp;&nbsp;&nbsp;
+	            </span>
+                <div class="rmnHr"></div>
+                
+                <table class="t1 on">
+                    
+                        
+                            <tr>
+                                <td>Беларусь</td>
+                                <td>
+                                    
+                                    <a href="/ru_by.html">Русский</a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Россия</td>
+                                <td>
+                                    
+                                    <a href="/ru.html">Русский</a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Казахстан</td>
+                                <td>
+                                    
+                                    <a href="/ru_kz.html">Русский</a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Global</td>
+                                <td>
+                                    
+                                    <a href="/en.html">English</a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Germany</td>
+                                <td>
+                                    
+                                    <a href="/de.html">Deutsch</a>
+                                </td>
+                            </tr>
+                        
+                    
+                </table>
+
+                <table class="t2">
+                    
+                    
+                        
+                            <tr>
+                                <td>Портал тренинг-центра</td>
+                                <td>
+                                    
+                                    <a class="arrow upRight" href="http://training.by/" target="_blank">EPAM для студентов</a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Блог команды тренеров</td>
+                                <td>
+                                    
+                                    <a class="arrow upRight" href="http://trainers.by/" target="_blank">EPAM для тренеров</a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Учебные материалы</td>
+                                <td>
+                                    
+                                    <a class="arrow upRight" href="/books.html">EPAM для программистов</a>
+                                </td>
+                            </tr>
+                        
+                    
+                </table>                              
+            </div>
+            
+			<div class="leftTop"></div>
+			<div class="left"></div>
+			<div class="leftBottom"></div>
+			<div class="bottom"></div>
+			<div class="rightBottom"></div>
+			<div class="right"></div>
+			<div class="rightTop"></div>
+			<div class="topRight"></div>
+			<div class="angle"></div>
+			<div class="topLeft"></div>
+            <a href="javascript:void(0);" class="cross"></a>
+        </div>
+    </li>
+</ul>
+
+<div class="clear"></div></div>
+
+            <div class="parbase search searchform">
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+
+<form id="topSearchForm" method="get" action="/search.html">
+    <input id="searchField" class="searchKeyword" type="text" name="q"  defaultText="Поиск" value="Поиск" />
+    <input class="searchButton" type="submit" value=""/>
+</form>
+<div class="clear"></div></div>
+
+	        <div class="contactUsLinks">
+
+
+
+
+
+
+
+
+
+
+<ul>
+     
+        
+        
+
+        
+          
+            <li class="careers coverHolder" style="margin-right: 10px;">
+                <a class="toggle" href="javascript:void(0);" onclick="javascript: return false;">Вакансии</a>
+                <div class="cover">
+                    <div class="content">
+                        <div class="parsys"><div class="vacanciesCover contactUsCover section"><div class="columns">
+            <div class="column">
+        <div class="padding">
+            <h3 class="">
+                    Виды деятельности</h3>
+            <div class="text"><p><a style="font-size: 12px;" href="/career/vacancies/belarus/software-engineering.html">Разработка программного обеспечения</a></p>
+<p><a href="/career/vacancies/belarus/testing.html">Обеспечение качества и Тестирование ПО<br>
+</a></p>
+<p><a href="/career/vacancies/belarus/business-analysis.html">Консалтинг и Бизнес-Анализ</a></p>
+<p><a href="/career/vacancies/belarus/maintenance-support.html" style="font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">Поддержка программного обеспечения</a></p>
+<p><a href="/career/vacancies/belarus/project-management.html" style="font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">Управление проектами</a></p>
+<p><a href="/career/vacancies/belarus/administrative.html" style="font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">Административные вакансии</a></p>
+<p><a href="/career/vacancies/belarus/it-infrastructure.html">IT и Техническая инфраструктура</a></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div></div>
+    </div>
+<div class="column">
+        <div class="padding">
+            <h3 class="">
+                Города</h3>
+            <div class="text"><p><a href="/career/vacancies/belarus/minsk.html">Минск</a></p>
+<p><a href="/career/vacancies/belarus/brest.html">Брест</a></p>
+<p><a href="/career/vacancies/belarus/vitebsk.html">Витебск</a></p>
+<p></p>
+<p></p>
+<p></p>
+<p><a href="/career/vacancies/belarus/gomel.html">Гомель</a></p>
+<p><a href="/career/vacancies/belarus/grodno.html">Гродно</a></p>
+<p><a href="/career/vacancies/belarus/mogilev.html">Могилев</a></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div></div>
+    </div><div class="clear"></div>
+        </div>
+        <div class="bottomLinks">
+        <a href="/career.html" class="arrow blueRight">Все о карьере</a>
+            </div></div>
+
+<script type="text/javascript">    
+    $(document).ready(function() {
+        var hasParsysWidth = ("false" == "true") ? true : false;
+        if (!hasParsysWidth) {
+            var width = $("#" + "parsys_1399813880464").parent().width();
+            if (width) {
+                $.ajax({
+                    type: "POST",
+                    url: "/content/epam/ru_by/jcr:content/contact_us/careers",
+                    data: { parsysWidth: width }
+                });
+            }
+        }
+    });
+</script></div>
+
+                    </div>
+                    <div class="leftTop"></div>
+                    <div class="left"></div>
+                    <div class="leftBottom"></div>
+                    <div class="bottom"></div>
+                    <div class="rightBottom"></div>
+                    <div class="right"></div>
+                    <div class="rightTop"></div>
+                    <div class="topRight"></div>
+                    <div class="angle"></div>
+                    <div class="topLeft"></div>
+                    <a href="javascript:void(0);" class="cross"></a>
+                </div>               
+                </li>
+           
+           
+                     
+            <li class="contacts coverHolder">
+                <a class="toggle" href="javascript:void(0);" onclick="javascript: return false;">Контакты</a>
+                <div class="cover">
+                    <div class="content">
+                        <div class="parsys"><div class="contactUsCover section"><div class="columns">
+			<div class="column">
+        <div class="padding">
+            <h3 class="contactWay talkContact">
+                </h3>
+            <div class="text"><p><b>Беларусь:</b><br>
+<span class="textTagline18">+375-17-389-0100</span><br>
+<br>
+<b>Россия:</b><br>
+<span class="textTagline18">+7-495-730-6362 </span><br>
+<br>
+<b>США:</b><br>
+<span class="textTagline18">+1-267-759-9000</span></p>
+</div></div>
+	</div>
+<div class="column">
+        <div class="padding">
+            <h3 class="contactWay writeContact">
+                </h3>
+            <div class="text"><p><span class="arrow blue-right"><a href="/aboutus/contact-us/request-info.html">Оставить заявку</a></span><br>
+</p>
+<p><b>Почтовый адрес:</b></p>
+<p>EPAM Systems<br>
+ул. Академика Купревича, 1-1-110<br>
+220141 Минск<br>
+Беларусь</p>
+<p>&nbsp;</p>
+</div></div>
+	</div>
+<div class="column">
+    	<div class="padding">
+            <h3 class="contactWay followContact">
+                </h3>
+
+             <ul>
+                <li class="facebook">
+                           <a href="http://www.facebook.com/epamby" target="_blank">Facebook</a>
+                            </li>
+                <li class="twitter">
+                           <a href="http://twitter.com/#!/epam_minsk" target="_blank">Twitter</a>
+                            </li>
+                <li class="vkontakte">
+                           <a href="http://vk.com/epamsystems" target="_blank">ВКонтакте</a>
+                            </li>
+                <li class="googlePlus">
+                           <a href="https://plus.google.com/+epamby" target="_blank">Google+</a>
+                            </li>
+                <li class="rss">
+                           <a href="/content/epam/ru_by.feed">RSS</a>
+                            </li>
+                </ul>
+             <div class="clear"></div>
+         </div>
+	</div><div class="clear"></div>
+		</div>
+		<div class="bottomLinks">
+    <a href="/aboutus/contact-us.html" class="arrow blueRight">Все контакты</a>
+            <a href="/aboutus/locations/belarus.html">Все представительства EPAM в Беларуси</a>
+            </div></div>
+
+<script type="text/javascript">    
+    $(document).ready(function() {
+        var hasParsysWidth = ("false" == "true") ? true : false;
+        if (!hasParsysWidth) {
+            var width = $("#" + "parsys_1399813880470").parent().width();
+            if (width) {
+                $.ajax({
+                    type: "POST",
+                    url: "/content/epam/ru_by/jcr:content/contact_us/content",
+                    data: { parsysWidth: width }
+                });
+            }
+        }
+    });
+</script></div>
+
+                    </div>
+                    <div class="leftTop"></div>
+                    <div class="left"></div>
+                    <div class="leftBottom"></div>
+                    <div class="bottom"></div>
+                    <div class="rightBottom"></div>
+                    <div class="right"></div>
+                    <div class="rightTop"></div>
+                    <div class="topRight"></div>
+                    <div class="angle"></div>
+                    <div class="topLeft"></div>
+                    <a href="javascript:void(0);" class="cross"></a>
+                </div>              
+            </li>
+            
+        
+    
+</ul></div>
+
+        </div>
+    </div>
+</div>
+    
+
+
+
+
+
+
+
+<div class="pagecontent">
+    <div class="container_16">
+        <div class="grid_12 grid_right">
+            <div class="grid_12 alpha omega">
+                <div class="parsys promoarea_container"><div class="text section">
+
+
+
+
+
+
+
+<h3>Запрашиваемая страница не найдена</h3>
+
+<div class="clear"></div>
+</div>
+<div class="errorPageMessage section">
+
+
+
+
+
+
+
+
+
+
+<p>Пожалуйста, проверьте правильность набранного адреса, воспользуйтесь формой поиска или перейдите на основные разделы сайта.</p>
+
+
+
+</div>
+<div id="parsys_1399813880498" class="parsys_column columns-layout three-columns-layout"><div class="parsys_column three-columns-layout-c0"><div class="treeView section">
+
+
+
+
+
+
+
+
+
+
+<h2 class="title textTagline24">
+
+
+
+    Услуги
+
+
+</h2>
+
+<ul>
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/services/product-development.html">Разработка программных продуктов</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/services/application-development.html">Разработка бизнес-приложений</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/services/eai.html">Интеграция приложений</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/services/porting.html">Миграция приложений</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/services/testing.html">Тестирование и QA</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/services/support.html">Сопровождение и поддержка</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/services/ddc.html">Создание выделенных центров</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+</ul>
+
+</div>
+</div><div class="parsys_column three-columns-layout-c1"><div class="treeView section">
+
+
+
+
+
+
+
+
+
+
+<h2 class="title textTagline24">
+
+
+
+    Отрасли
+
+
+</h2>
+
+<ul>
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/verticals/banking-finance.html">Банки и финансы</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/verticals/insurance.html">Страхование</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/verticals/travel.html">Туризм и транспорт</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/verticals/software-vendors.html">Производители ПО</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/verticals/other-verticals.html">Другие отрасли</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+</ul>
+
+</div>
+</div><div class="parsys_column three-columns-layout-c2"><div class="treeView section">
+
+
+
+
+
+
+
+
+
+
+<h2 class="title textTagline24">
+
+
+
+    Решения
+
+
+</h2>
+
+<ul>
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/solutions/mobile-applications.html">Мобильные приложения</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/solutions/analytics.html">Отчетность и аналитика</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/solutions/e-commerce.html">Электронная коммерция</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/solutions/plm.html">PLM-решения</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/solutions/portals.html">Порталы</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/solutions/sap-technologies.html">SAP-технологии</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+</ul>
+
+</div>
+</div></div><div class="clear"></div><div id="parsys_1399813880498" class="parsys_column columns-layout three-columns-layout"><div class="parsys_column three-columns-layout-c0"><div class="treeView section">
+
+
+
+
+
+
+
+
+
+
+<h2 class="title textTagline24">
+
+
+
+    Компания
+
+
+</h2>
+
+<ul>
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/aboutus/history.html">История</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/aboutus/leadership.html">Руководство</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/aboutus/awards.html">Награды</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/aboutus/news-and-events.html">Новости и события</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/aboutus/locations.html">Представительства</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/aboutus/contact-us.html">Контакты</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+</ul>
+
+</div>
+</div><div class="parsys_column three-columns-layout-c1"><div class="treeView section">
+
+
+
+
+
+
+
+
+
+
+<h2 class="title textTagline24">
+
+
+
+    Формула успеха
+
+
+</h2>
+
+<ul>
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/strengths/specialists.html">Сотрудники</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/strengths/customers.html">Заказчики</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/strengths/partners.html">Партнеры</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/strengths/competency-centers.html">Центры компетенции</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/strengths/technologies.html">Технологии</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/strengths/methodology.html">Методология</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+</ul>
+
+</div>
+</div><div class="parsys_column three-columns-layout-c2"><div class="treeView section">
+
+
+
+
+
+
+
+
+
+
+<h2 class="title textTagline24">
+
+
+
+    Карьера
+
+
+</h2>
+
+<ul>
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/career/vacancies.html">Вакансии</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/career/trainings.html">Тренинги</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/career/professional-development.html">Развитие карьеры</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/career/benefits.html">Социальный пакет</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/career/universities.html">Работа с университетами</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+        
+            <li>
+            
+            
+                
+                    <a href="/career/faq.html">Как попасть в EPAM?</a>
+                
+                
+            
+        
+        
+        
+        
+    
+        
+        
+           </li>
+        
+        
+        
+    
+</ul>
+
+</div>
+</div></div><div class="clear"></div>
+<script type="text/javascript">    
+    $(document).ready(function() {
+        var hasParsysWidth = ("true" == "true") ? true : false;
+        if (!hasParsysWidth) {
+            var width = $("#" + "parsys_1399813880498").parent().width();
+            if (width) {
+                $.ajax({
+                    type: "POST",
+                    url: "/content/epam/ru_by/errorpages/404/jcr:content/promoarea_container",
+                    data: { parsysWidth: width }
+                });
+            }
+        }
+    });
+</script></div>
+
+            </div>
+            <div class="grid_8 alpha">
+                <div class="parsys textarea_container">
+<script type="text/javascript">    
+    $(document).ready(function() {
+        var hasParsysWidth = ("false" == "true") ? true : false;
+        if (!hasParsysWidth) {
+            var width = $("#" + "parsys_1399813880573").parent().width();
+            if (width) {
+                $.ajax({
+                    type: "POST",
+                    url: "/content/epam/ru_by/errorpages/404/jcr:content/textarea_container",
+                    data: { parsysWidth: width }
+                });
+            }
+        }
+    });
+</script></div>
+
+            </div>
+            <div class="grid_4 grid_right omega">
+                <div class="parsys aside_inner_container">
+<script type="text/javascript">    
+    $(document).ready(function() {
+        var hasParsysWidth = ("false" == "true") ? true : false;
+        if (!hasParsysWidth) {
+            var width = $("#" + "parsys_1399813880575").parent().width();
+            if (width) {
+                $.ajax({
+                    type: "POST",
+                    url: "/content/epam/ru_by/errorpages/404/jcr:content/aside_inner_container",
+                    data: { parsysWidth: width }
+                });
+            }
+        }
+    });
+</script></div>
+
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="parsys aside_container"><div class="ghost section">
+</div>
+
+<script type="text/javascript">    
+    $(document).ready(function() {
+        var hasParsysWidth = ("false" == "true") ? true : false;
+        if (!hasParsysWidth) {
+            var width = $("#" + "parsys_1399813880576").parent().width();
+            if (width) {
+                $.ajax({
+                    type: "POST",
+                    url: "/content/epam/ru_by/errorpages/404/jcr:content/aside_container",
+                    data: { parsysWidth: width }
+                });
+            }
+        }
+    });
+</script></div>
+
+        </div>
+    </div>
+</div>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+     
+	
+    <div class="footerPlace"></div>
+    
+
+
+
+
+
+
+
+<div class="footer">
+	<a href="#" class="scrollup">Scroll</a>
+    <div class="container_16 footerWrapper">
+        <div class="topRow">
+            <div class="grid_8">
+                <div class="parbase pagelinks">
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+		<ul>
+			
+				 
+				<li><a href="/aboutus.html">О компании</a></li>
+			
+				 
+				<li><a href="/aboutus/contact-us.html">Контакты</a></li>
+			
+				 
+				<li><a href="/sitemap.html">Карта сайта</a></li>
+			
+				 
+				<li><a href="/career.html">Карьера</a></li>
+			
+		</ul>
+	
+	
+</div>
+
+            </div>
+            <div class="grid_8 grid_right">
+                <div class="shareFollow socialLinks">
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        <span></span>
+        <ul>
+            
+                
+                <li class="facebook"><a title="Присоединяйтесь к нам в Facebook" href="http://www.facebook.com/epamby" target="_blank"></a></li>
+            
+                
+                <li class="vkontakte"><a title="Присоединяйтесь к нам в ВКонтакте" href="http://vk.com/epamsystems" target="_blank"></a></li>
+            
+                
+                <li class="twitter"><a title="Следите за нами в Twitter" href="http://twitter.com/#!/epam_minsk" target="_blank"></a></li>
+            
+                
+                <li class="googlePlus"><a title="Присоединяйтесь к нам в Google+" href="https://plus.google.com/+epamby" target="_blank"></a></li>
+            
+        </ul>
+    
+    
+</div>
+
+            </div>
+        </div>
+        <div class="grid_16 middleRow">
+			<div id="footerSitemap" class="footerSitemap"><ul><li><a href="/services.html">Услуги</a><ul><li><a href="/services/product-development.html">Разработка программных продуктов</a></li><li><a href="/services/application-development.html">Разработка бизнес-приложений</a></li><li><a href="/services/eai.html">Интеграция приложений</a></li><li><a href="/services/porting.html">Миграция приложений</a></li><li><a href="/services/testing.html">Тестирование и QA</a></li><li><a href="/services/support.html">Сопровождение и поддержка</a></li><li><a href="/services/ddc.html">Создание выделенных центров</a></li></ul></li><li><a href="/verticals.html">Отрасли</a><ul><li><a href="/verticals/banking-finance.html">Банки и финансы</a></li><li><a href="/verticals/insurance.html">Страхование</a></li><li><a href="/verticals/travel.html">Туризм и транспорт</a></li><li><a href="/verticals/software-vendors.html">Производители ПО</a></li><li><a href="/verticals/other-verticals.html">Другие отрасли</a></li></ul></li><li><a href="/solutions.html">Решения</a><ul><li><a href="/solutions/mobile-applications.html">Мобильные приложения</a></li><li><a href="/solutions/analytics.html">Отчетность и аналитика</a></li><li><a href="/solutions/e-commerce.html">Электронная коммерция</a></li><li><a href="/solutions/plm.html">PLM-решения</a></li><li><a href="/solutions/portals.html">Порталы</a></li><li><a href="/solutions/sap-technologies.html">SAP-технологии</a></li></ul></li><li><a href="/aboutus.html">Компания</a><ul><li><a href="/aboutus/history.html">История</a></li><li><a href="/aboutus/leadership.html">Руководство</a></li><li><a href="/aboutus/awards.html">Награды</a></li><li><a href="/aboutus/news-and-events.html">Новости и события</a></li><li><a href="/aboutus/locations.html">Представительства</a></li><li><a href="/aboutus/contact-us.html">Контакты</a></li></ul></li><li><a href="/strengths.html">Формула успеха</a><ul><li><a href="/strengths/specialists.html">Сотрудники</a></li><li><a href="/strengths/customers.html">Заказчики</a></li><li><a href="/strengths/partners.html">Партнеры</a></li><li><a href="/strengths/competency-centers.html">Центры компетенции</a></li><li><a href="/strengths/technologies.html">Технологии</a></li><li><a href="/strengths/methodology.html">Методология</a></li></ul></li><li><a href="/career.html">Карьера</a><ul><li><a href="/career/vacancies.html">Вакансии</a></li><li><a href="/career/trainings.html">Тренинги</a></li><li><a href="/career/professional-development.html">Развитие карьеры</a></li><li><a href="/career/benefits.html">Социальный пакет</a></li><li><a href="/career/universities.html">Работа с университетами</a></li><li><a href="/career/faq.html">Как попасть в EPAM?</a></li></ul></li></ul><div class="clear"></div></div>
+
+		</div>
+        <div class="grid_16 bottomRow">
+            <div class="parbase copyrights">
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+        <div class="image">
+            <a href="/ru_by.html">
+                
+					<!--[if lt IE 9]>
+						<img src="/etc/designs/epam/images/components/copyrigths/epam-logo20-footer.png" alt="EPAM Systems" title="EPAM Systems" />
+					<![endif]-->
+    			
+        		
+					<!--[if gt IE 8]>
+						<img src="/etc/designs/epam/images/components/copyrigths/epam-logo20-footer.svg" alt="EPAM Systems" title="EPAM Systems" />
+					<![endif]-->
+					<!--[if !IE]>-->
+						<img src="/etc/designs/epam/images/components/copyrigths/epam-logo20-footer.svg" alt="EPAM Systems" title="EPAM Systems"/>
+ 					<!--<![endif]-->
+    			
+    			
+            </a>
+        </div>
+
+        <div class="text">
+            &copy; 1993-2014.
+            
+                
+                    EPAM Systems. Все права защищены.
+                
+                
+            
+            
+                
+                    <a href="/privacy.html">Политика конфиденциальности</a>
+                
+                
+            
+        </div>
+	
+
+
+<div class="clear"></div>
+</div>
+
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
