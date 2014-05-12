@@ -37,38 +37,25 @@ public class MySQLReader {
         try {
             Connection connection = getConnection();
             Statement st = connection.createStatement();
-            ResultSet rs = st.executeQuery("SELECT * FROM medicine ORDER BY name");
+            ResultSet rs = st.executeQuery("SELECT * FROM medicine m JOIN consistence c ON c.id=m.consistence_id JOIN dosage d ON d.id=dosage_id JOIN frequency f ON f.id = d.frequency_id JOIN package p ON p.id=m.package_id");
             while(rs.next()){
                 MedicineXmlTO to = new MedicineXmlTO();
                 ResultSet temp;
-                to.medicineId = rs.getString("id");
-                to.medicineName = rs.getString("name");
-                to.medicineGroup = rs.getString("groupp");
-                to.medicineCompany = rs.getString("company");
-                to.dosageId = rs.getString("dosage_id");
-                String packId = rs.getString("package_id");
-                String q = "SELECT * FROM consistence WHERE id=" + rs.getString("consistence_id");
-                temp = st.executeQuery(q);
-                if(temp.next()){
-                    String ddd = temp.getString(1);
-                    to.consistence = temp.getString("name");
-                }
+                to.medicineId = rs.getString("m.id");
+                to.medicineName = rs.getString("m.name");
+                to.medicineGroup = rs.getString("m.groupp");
+                to.medicineCompany = rs.getString("m.company");
+                to.dosageId = rs.getString("m.dosage_id");
+                to.consistence = rs.getString("c.name");
+                to.isAfterFood = rs.getBoolean("d.is_after_food");
+                to.numberPerPeriod = rs.getInt("d.number");
                 
-                temp = st.executeQuery("SELECT * FROM dosage WHERE id=" + to.dosageId);
-                if(temp.next()){
-                    to.isAfterFood = temp.getBoolean("is_after_food");
-                    to.numberPerPeriod = temp.getInt("number");
-                }
-                temp = st.executeQuery("SELECT * FROM frequency WHERE id=" + temp.getString("frequency_id"));
-                if(temp.next())
-                    to.frequency = temp.getString("name");
-                temp = st.executeQuery("SELECT * FROM package WHERE id=" + packId);
-                if(temp.next()){
-                    to.packageId = temp.getString("id");
-                    to.packageType = temp.getString("type");
-                    to.numberPerPackage = temp.getInt("number");
-                    to.packagePrice = temp.getFloat("price");
-                }
+                to.frequency = rs.getString("f.name");
+                to.packageId = rs.getString("p.id");
+                to.packageType = rs.getString("p.type");
+                to.numberPerPackage = rs.getInt("p.number");
+                to.packagePrice = rs.getFloat("p.price");
+
                 medTo.add(to);
             }
             connection.close();
