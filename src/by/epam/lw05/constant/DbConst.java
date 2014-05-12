@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package by.epam.lw05.entity.constant;
+package by.epam.lw05.constant;
 
 /**
  *
