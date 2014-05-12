@@ -6,7 +6,7 @@
 //
 
 
-package by.epam.lw05.files.medicines;
+package by.epam.lw05.entity.medicines;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
@@ -14,40 +14,34 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for Consistense.
+ * <p>Java class for Frequency.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="Consistense">
+ * &lt;simpleType name="Frequency">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="pill"/>
- *     &lt;enumeration value="capsule"/>
- *     &lt;enumeration value="drops"/>
- *     &lt;enumeration value="ointment"/>
- *     &lt;enumeration value="syrup"/>
+ *     &lt;enumeration value="perDay"/>
+ *     &lt;enumeration value="perWeek"/>
+ *     &lt;enumeration value="perMonth"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
  * 
  */
-@XmlType(name = "Consistense")
+@XmlType(name = "Frequency")
 @XmlEnum
-public enum Consistense {
+public enum Frequency {
 
-    @XmlEnumValue("pill")
-    PILL("pill"),
-    @XmlEnumValue("capsule")
-    CAPSULE("capsule"),
-    @XmlEnumValue("drops")
-    DROPS("drops"),
-    @XmlEnumValue("ointment")
-    OINTMENT("ointment"),
-    @XmlEnumValue("syrup")
-    SYRUP("syrup");
+    @XmlEnumValue("perDay")
+    PER_DAY("perDay"),
+    @XmlEnumValue("perWeek")
+    PER_WEEK("perWeek"),
+    @XmlEnumValue("perMonth")
+    PER_MONTH("perMonth");
     private final String value;
 
-    Consistense(String v) {
+    Frequency(String v) {
         value = v;
     }
 
@@ -55,8 +49,8 @@ public enum Consistense {
         return value;
     }
 
-    public static Consistense fromValue(String v) {
-        for (Consistense c: Consistense.values()) {
+    public static Frequency fromValue(String v) {
+        for (Frequency c: Frequency.values()) {
             if (c.value.equals(v)) {
                 return c;
             }

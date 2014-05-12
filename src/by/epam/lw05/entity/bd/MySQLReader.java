@@ -57,6 +57,18 @@ public class MySQLReader {
 
                 medTo.add(to);
             }
+            for(int i = 0; i < medTo.size(); ++i){
+                MedicineXmlTO to = medTo.get(i);
+                to.analogs = new ArrayList<MedicineXmlTO>();
+                rs = st.executeQuery("SELECT * FROM analog WHERE analog_medicine_id="+i+" OR medicine_id="+i);
+                while(rs.next()){
+                    int n = rs.getInt("analog_medicine_id");
+                    if(n != i)
+                        to.analogs.add(medTo.get(n));
+                    else
+                        to.analogs.add(medTo.get(rs.getInt("medicine_id")));
+                }
+            }
             connection.close();
         } catch (SQLException ex) {
             Logger.getLogger(MySQLReader.class.getName()).log(Level.SEVERE, null, ex);

@@ -6,7 +6,7 @@
 //
 
 
-package by.epam.lw05.files.medicines;
+package by.epam.lw05.entity.medicines;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

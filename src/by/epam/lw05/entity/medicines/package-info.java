@@ -6,4 +6,4 @@
 //
 
 @javax.xml.bind.annotation.XmlSchema(namespace = "http://www.files.lw05.epam.by/Medicines", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
-package by.epam.lw05.files.medicines;
+package by.epam.lw05.entity.medicines;

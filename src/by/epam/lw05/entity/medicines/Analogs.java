@@ -6,28 +6,27 @@
 //
 
 
-package by.epam.lw05.files.medicines;
+package by.epam.lw05.entity.medicines;
 
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for anonymous complex type.
+ * <p>Java class for Analogs complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
+ * &lt;complexType name="Analogs">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="medicine" type="{http://www.files.lw05.epam.by/Medicines}Medicine" maxOccurs="unbounded"/>
+ *         &lt;element name="analog" type="{http://www.files.lw05.epam.by/Medicines}Medicine" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -37,28 +36,27 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "medicine"
+@XmlType(name = "Analogs", propOrder = {
+    "analog"
 })
-@XmlRootElement(name = "medicines")
-public class Medicines {
+public class Analogs {
 
     @XmlElement(required = true)
-    protected List<Medicine> medicine;
+    protected List<Medicine> analog;
 
     /**
-     * Gets the value of the medicine property.
+     * Gets the value of the analog property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the medicine property.
+     * This is why there is not a <CODE>set</CODE> method for the analog property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getMedicine().add(newItem);
+     *    getAnalog().add(newItem);
      * </pre>
      * 
      * 
@@ -68,11 +66,11 @@ public class Medicines {
      * 
      * 
      */
-    public List<Medicine> getMedicine() {
-        if (medicine == null) {
-            medicine = new ArrayList<Medicine>();
+    public List<Medicine> getAnalog() {
+        if (analog == null) {
+            analog = new ArrayList<Medicine>();
         }
-        return this.medicine;
+        return this.analog;
     }
 
 }
