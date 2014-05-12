@@ -6,6 +6,7 @@
 
 package by.epam.lw05.files.main;
 
+import by.epam.lw05.entity.bd.MySQLReader;
 import by.epam.lw05.files.medicines.Consistense;
 import by.epam.lw05.files.medicines.Dosage;
 import by.epam.lw05.files.medicines.Frequency;
@@ -31,7 +32,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Medicines medicines= new Medicines();
+        /*Medicines medicines= new Medicines();
         Medicine medicine = new Medicine();
         medicine.setName("Valakordin");
         medicine.setCompany("ValCompany");
@@ -63,7 +64,9 @@ public class Main {
             }
         } catch (JAXBException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        }*/
+        MySQLReader ms = new MySQLReader();
+        ms.read();
     }
     
 }
