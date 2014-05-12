@@ -32,7 +32,7 @@ public class MySQLReader {
         return DriverManager.getConnection(DbConst.dBUrl, DbConst.dBUser, DbConst.dBPassword);
     }
     
-    public void read(){
+    public ArrayList<MedicineXmlTO> read(){
         ArrayList<MedicineXmlTO> medTo = new ArrayList<MedicineXmlTO>();
         try {
             Connection connection = getConnection();
@@ -40,7 +40,6 @@ public class MySQLReader {
             ResultSet rs = st.executeQuery("SELECT * FROM medicine m JOIN consistence c ON c.id=m.consistence_id JOIN dosage d ON d.id=dosage_id JOIN frequency f ON f.id = d.frequency_id JOIN package p ON p.id=m.package_id");
             while(rs.next()){
                 MedicineXmlTO to = new MedicineXmlTO();
-                ResultSet temp;
                 to.medicineId = rs.getString("m.id");
                 to.medicineName = rs.getString("m.name");
                 to.medicineGroup = rs.getString("m.groupp");
@@ -63,5 +62,6 @@ public class MySQLReader {
             Logger.getLogger(MySQLReader.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+        return medTo;
     }
 }
