@@ -14,6 +14,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -23,19 +24,11 @@ import java.util.logging.Logger;
  * @author Anna
  */
 public class MySQLReader {
-    private Connection getConnection() throws SQLException{
-        try {
-            Class.forName(DbConst.dBDriver);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(MySQLReader.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return DriverManager.getConnection(DbConst.dBUrl, DbConst.dBUser, DbConst.dBPassword);
-    }
     
-    public ArrayList<MedicineXmlTO> read(){
+    public Iterator<MedicineXmlTO> read() throws InterruptedException{
         ArrayList<MedicineXmlTO> medTo = new ArrayList<MedicineXmlTO>();
         try {
-            Connection connection = getConnection();
+            Connection connection = DbPool.getInstance().getConnection();
             Statement st = connection.createStatement();
             ResultSet rs = st.executeQuery("SELECT * FROM medicine m JOIN consistence c ON c.id=m.consistence_id JOIN dosage d ON d.id=dosage_id JOIN frequency f ON f.id = d.frequency_id JOIN package p ON p.id=m.package_id");
             while(rs.next()){
@@ -69,11 +62,11 @@ public class MySQLReader {
                         to.analogs.add(medTo.get(rs.getInt("medicine_id")));
                 }
             }
-            connection.close();
+            DbPool.getInstance().putConnection(connection);
         } catch (SQLException ex) {
             Logger.getLogger(MySQLReader.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        return medTo;
+        return medTo.iterator();
     }
 }

@@ -32,7 +32,5 @@ public class MedicineXmlTO {
     public String packageType;
     public float packagePrice;
 
-    public Package _package;
-
     
 }
